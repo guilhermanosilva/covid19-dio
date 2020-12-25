@@ -12,8 +12,8 @@ import {
 
 const navigatorHasShared = navigator.share
 
-function Painel({ updateAt, onChange, data, country, getCovidData }) {
-  const { cases, recovered, deaths, todayCases, todayDeaths } = data
+function Painel({ updateAt, onChange, data, country }) {
+  const { cases, recovered, deaths } = data
 
   const renderCountries = (country, index) => (
     <MenuItem key={`country-${index}`} value={country.value}>
@@ -58,7 +58,7 @@ function Painel({ updateAt, onChange, data, country, getCovidData }) {
       <CardPanelContentStyled>
         <PainelStart>
           <Typography variant="h4" component="span" color="primary">COVID19</Typography>
-          <Typography variant="h6" component="span" color="text.secondary">Painel coronavirus</Typography>
+          <Typography variant="h6" component="span" textcolor="text.secondary">Painel coronavirus</Typography>
           <div className="pt-2">
             <Select onChange={onChange} value={country}>{COUNTRIES.map(renderCountries)}</Select>
           </div>
