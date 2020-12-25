@@ -11,6 +11,6 @@ function getCountry(country){
     .then(response => response.json())
 }
 
-export default {
+export {
   getCountry
 }
