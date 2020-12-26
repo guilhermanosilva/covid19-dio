@@ -58,7 +58,7 @@ function Painel({ updateAt, onChange, data, country }) {
       <CardPanelContentStyled>
         <PainelStart>
           <Typography variant="h4" component="span" color="primary">COVID19</Typography>
-          <Typography variant="h6" component="span" textcolor="text.secondary">Painel coronavirus</Typography>
+          <Typography variant="h6" component="span" color="textSecondary">Painel coronavirus</Typography>
           <div className="pt-2">
             <Select onChange={onChange} value={country}>{COUNTRIES.map(renderCountries)}</Select>
           </div>

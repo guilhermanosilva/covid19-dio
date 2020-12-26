@@ -45,6 +45,7 @@ const GlobalStyle = createGlobalStyle`
     background-position: center center;
     }
   }
+
 `
 
 export default GlobalStyle
